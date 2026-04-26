@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paginação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .pagination {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pagination-btn {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            border: 2px solid #0066cc;
+            background-color: #ffffff;
+            color: #0066cc;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pagination-btn:hover {
+            background-color: #0066cc;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+        }
+
+        .pagination-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(0, 102, 204, 0.3);
+        }
+
+        .pagination-btn.prev {
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+
+        .description {
+            color: #666;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Paginação</h1>
+        
+        <div class="pagination">
+            <button class="pagination-btn prev" title="Primeira página">&lt;&lt;</button>
+            <button class="pagination-btn">1</button>
+            <button class="pagination-btn">2</button>
+            <button class="pagination-btn">3</button>
+        </div>
+
+        <p class="description">Clique nos botões para navegar entre páginas</p>
+    </div>
+</body>
+</html>
